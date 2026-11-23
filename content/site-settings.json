@@ -1,0 +1,17 @@
+{
+  "brandName": "TypeUP Academia",
+  "heroTitle": "Vos études, un pas à la fois.",
+  "heroIntro": "Un coup de main pour préparer, présenter et imprimer vos travaux universitaires.",
+  "priceTiers": [
+    { "label": "1 à 5 pages", "maxPages": 5, "amount": 1500 },
+    { "label": "6 à 10 pages", "maxPages": 10, "amount": 3000 },
+    { "label": "11 à 15 pages", "maxPages": 15, "amount": 4500 },
+    { "label": "16 à 20 pages", "maxPages": 20, "amount": 6000 },
+    { "label": "21 à 25 pages", "maxPages": 25, "amount": 7500 },
+    { "label": "26 à 30 pages", "maxPages": 30, "amount": 9000 }
+  ],
+  "typingFormattingPrice": 5000,
+  "printingPerPage": 500,
+  "whatsappNumbers": ["243991435930", "243820922944"],
+  "examplePageCounts": [5, 10, 20]
+}

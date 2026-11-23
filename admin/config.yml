@@ -1,0 +1,50 @@
+backend:
+  name: turbo-github
+  turbo_site_id: REPLACE_WITH_TURBO_SITE_ID
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "site"
+    label: "Site"
+    files:
+      - name: "settings"
+        label: "Textes et tarifs"
+        file: "content/site-settings.json"
+        fields:
+          - label: "Nom du site"
+            name: "brandName"
+            widget: "string"
+          - label: "Titre d’accueil"
+            name: "heroTitle"
+            widget: "string"
+          - label: "Présentation d’accueil"
+            name: "heroIntro"
+            widget: "text"
+          - label: "Tarifs par tranche de pages"
+            name: "priceTiers"
+            widget: "list"
+            fields:
+              - { label: "Libellé", name: "label", widget: "string" }
+              - { label: "Jusqu’à la page", name: "maxPages", widget: "number", value_type: "int", min: 1 }
+              - { label: "Prix en FC", name: "amount", widget: "number", value_type: "int", min: 0 }
+          - label: "Saisie et mise en forme (FC par document)"
+            name: "typingFormattingPrice"
+            widget: "number"
+            value_type: "int"
+            min: 0
+          - label: "Impression (FC par page et exemplaire)"
+            name: "printingPerPage"
+            widget: "number"
+            value_type: "int"
+            min: 0
+          - label: "Numéros WhatsApp (format international sans + ni espaces)"
+            name: "whatsappNumbers"
+            widget: "list"
+            field: { label: "Numéro WhatsApp", name: "number", widget: "string" }
+          - label: "Exemples de nombre de pages"
+            name: "examplePageCounts"
+            widget: "list"
+            field: { label: "Nombre de pages", name: "pages", widget: "number", value_type: "int", min: 1 }

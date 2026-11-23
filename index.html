@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f4ef">
+  <meta name="description" content="TypeUP Academia accompagne les étudiants : mise en page, relecture, impression et livraison de travaux universitaires.">
+  <title>TypeUP Academia — Un appui concret pour vos études</title>
+  <style>
+    :root{--ink:#142a25;--muted:#61716a;--green:#1f654f;--lime:#c8ed7b;--paper:#f6f4ef;--white:#fff;--line:#e3e6df;--orange:#f1a56f}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}
+    header{height:82px;display:flex;align-items:center;border-bottom:1px solid rgba(20,42,37,.08)}.nav{display:flex;align-items:center;justify-content:space-between;width:100%}.brand{display:flex;align-items:center;gap:11px;font-size:19px;font-weight:800;letter-spacing:-.5px}.brandmark{display:grid;place-items:center;width:37px;height:37px;border-radius:12px;background:var(--green);color:var(--lime);font-size:15px;letter-spacing:-1px}.navlinks{display:flex;gap:32px;align-items:center;color:#42544d;font-size:14px;font-weight:600}.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:999px;background:var(--green);color:white;font-size:14px;font-weight:700;transition:.2s}.button:hover{background:#164b3a;transform:translateY(-1px)}.button.light{background:var(--lime);color:var(--ink)}.button.light:hover{background:#d8f59a}.textlink{font-size:14px;font-weight:700;color:var(--green)}
+    .hero{padding:67px 0 72px;display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--green);font-size:12px;text-transform:uppercase;letter-spacing:1.35px;font-weight:800}.dot{height:8px;width:8px;border-radius:50%;background:#ed9d68}.hero h1{max-width:620px;margin:19px 0 18px;font-size:clamp(45px,6vw,74px);line-height:1.02;letter-spacing:-4.3px;font-weight:750}.hero h1 em{color:var(--green);font-style:normal}.lead{max-width:520px;color:#53635c;font-size:17px;line-height:1.75}.hero-actions{display:flex;align-items:center;gap:23px;margin-top:30px}.trust{display:flex;align-items:center;gap:11px;margin-top:37px;color:#66746e;font-size:12px}.avatars{display:flex}.avatars span{display:grid;place-items:center;width:30px;height:30px;margin-right:-7px;border:2px solid var(--paper);border-radius:50%;background:#d8e7d3;color:var(--green);font-size:10px;font-weight:800}.avatars span:nth-child(2){background:#f5d3ba}.avatars span:nth-child(3){background:#d8d8f2}
+    .visual{position:relative;min-height:445px;border-radius:28px;background:#dfe9d9;padding:27px;overflow:hidden}.visual:before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:var(--lime);right:-85px;top:-112px}.visual:after{content:"";position:absolute;width:170px;height:170px;border-radius:50%;background:#edb086;left:-82px;bottom:-76px}.paper-card{position:relative;z-index:1;margin:20px auto 0;width:min(310px,85%);height:350px;background:#fff;border-radius:9px;padding:27px 25px;box-shadow:0 22px 55px #284c3a24;transform:rotate(-3deg)}.paper-top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #e8ece6;padding-bottom:14px}.paper-logo{width:27px;height:27px;border-radius:8px;background:var(--green);color:var(--lime);display:grid;place-items:center;font-size:10px;font-weight:900}.paper-lines{display:flex;gap:4px;flex-direction:column}.paper-lines i{height:4px;width:54px;background:#e9ede7;border-radius:2px}.paper-lines i:first-child{width:37px;background:#bdd97b}.paper-title{margin-top:27px;font-size:19px;font-weight:800;line-height:1.22;letter-spacing:-.5px}.paper-sub{margin-top:8px;color:#8a958e;font-size:9px}.paper-rule{height:1px;background:#e8ece6;margin:17px 0}.paper-section{font-size:9px;font-weight:800;margin:14px 0 8px}.paper-row{height:5px;background:#edf0eb;border-radius:4px;margin:6px 0;width:100%}.paper-row.short{width:72%}.stamp{position:absolute;right:-19px;bottom:41px;background:var(--lime);padding:13px 16px;border-radius:14px;box-shadow:0 9px 22px #294f3b22;transform:rotate(5deg);font-weight:800;font-size:12px;color:var(--green)}.floating{position:absolute;z-index:2;left:17px;top:48px;background:white;padding:13px 16px;border-radius:13px;box-shadow:0 8px 22px #294f3b15;font-size:11px;font-weight:750}.floating b{display:block;font-size:15px;color:var(--green)}
+    .services{background:var(--white);padding:77px 0 82px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:32px;margin-bottom:35px}.section-head h2,.how h2{margin:9px 0 0;font-size:clamp(30px,4vw,44px);line-height:1.1;letter-spacing:-1.9px}.section-head p{max-width:380px;margin:0;color:var(--muted);font-size:14px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{min-height:220px;padding:23px 21px;border:1px solid var(--line);border-radius:18px;background:#fff}.icon{display:grid;place-items:center;width:41px;height:41px;border-radius:13px;background:#eff4e8;color:var(--green);font-size:19px}.card h3{font-size:16px;margin:20px 0 8px;letter-spacing:-.3px}.card p{font-size:13px;color:var(--muted);margin:0;line-height:1.7}
+    .pricing-grid{display:grid;grid-template-columns:1.15fr .9fr .95fr;gap:14px}.pricing-grid .card{min-height:0}.pricing-grid .card h3{margin-top:0}.price-list{list-style:none;padding:0;margin:14px 0 0}.price-list li{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted)}.price-list strong,.price-example strong{color:var(--ink);white-space:nowrap}.price-example{padding:10px 0;border-bottom:1px solid var(--line)}.price-example:last-child{border:0}.price-example b{display:block;color:var(--ink);font-size:13px}.price-example span{color:var(--muted);font-size:12px}.price-note{margin-top:16px!important;font-size:12px!important}
+    .how{padding:78px 0}.howgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:90px;align-items:start}.how-copy p{max-width:390px;color:var(--muted);font-size:15px}.steps{display:grid;gap:0}.step{display:grid;grid-template-columns:42px 1fr;gap:17px;padding:0 0 25px}.stepnum{height:34px;width:34px;display:grid;place-items:center;border:1px solid #ccd7c8;border-radius:50%;font-size:12px;font-weight:800;color:var(--green)}.step h3{margin:3px 0 5px;font-size:15px}.step p{margin:0;color:var(--muted);font-size:13px}.step:not(:last-child) .stepnum{position:relative}.step:not(:last-child) .stepnum:after{content:"";position:absolute;width:1px;height:27px;top:34px;background:#dce3d8}
+    .cta{padding:0 0 76px}.cta-box{border-radius:24px;background:var(--green);color:white;padding:42px 48px;display:flex;justify-content:space-between;align-items:flex-start;gap:30px;overflow:hidden;position:relative}.cta-box:after{content:"";position:absolute;width:210px;height:210px;border:1px solid #ffffff20;border-radius:50%;right:230px;top:-140px}.cta-box h2{font-size:32px;line-height:1.1;letter-spacing:-1.3px;margin:0 0 10px}.cta-box p{color:#c8d9d0;font-size:14px;margin:0}.request-form{position:relative;z-index:1;width:min(500px,100%);display:grid;grid-template-columns:1fr 1fr;gap:12px}.request-form label{display:grid;gap:5px;color:#e6f0ea;font-size:11px;font-weight:700}.request-form input,.request-form select,.request-form textarea{width:100%;border:1px solid #ffffff40;border-radius:10px;background:#fff;color:#18352b;padding:11px 12px;font:inherit;font-size:13px;outline:0}.request-form textarea{min-height:78px;resize:vertical}.request-form .wide{grid-column:1/-1}.request-form button{border:0;cursor:pointer;justify-self:start}.form-status{grid-column:1/-1;min-height:18px;margin:0;color:#e7f5dd;font-size:12px}.form-status.error{color:#ffe0d8}
+    footer{border-top:1px solid var(--line);padding:24px 0 30px;color:#718078;font-size:12px}.foot{display:flex;justify-content:space-between;align-items:center}.foot .brand{color:var(--ink);font-size:15px}.foot .brandmark{width:29px;height:29px;border-radius:9px;font-size:12px}
+    @media(max-width:850px){.hero{grid-template-columns:1fr;gap:36px;padding-top:53px}.visual{min-height:420px}.cards{grid-template-columns:repeat(2,1fr)}.howgrid{grid-template-columns:1fr;gap:34px}.section-head{align-items:start;flex-direction:column;gap:12px}}
+    @media(max-width:850px){.pricing-grid{grid-template-columns:1fr}}
+    @media(max-width:560px){.wrap{width:min(100% - 32px,1160px)}header{height:70px}.navlinks a:not(.button){display:none}.navlinks{gap:0}.navlinks .button{padding:11px 14px}.hero{padding:43px 0 53px}.hero h1{letter-spacing:-2.7px}.lead{font-size:15px}.hero-actions{align-items:flex-start;flex-direction:column;gap:17px}.visual{min-height:390px;padding:17px}.paper-card{height:330px;margin-top:20px}.services{padding:59px 0}.cards{grid-template-columns:1fr}.card{min-height:0}.how{padding:58px 0}.cta-box{padding:31px 25px;align-items:flex-start;flex-direction:column}.cta-box h2{font-size:28px}.request-form{grid-template-columns:1fr}.request-form .wide{grid-column:auto}.form-status{grid-column:auto}.foot{gap:15px;align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#accueil" aria-label="TypeUP Academia, accueil"><span class="brandmark">TU</span><span data-site-brand>TypeUP Academia</span></a>
+      <nav class="navlinks" aria-label="Navigation principale"><a href="#services">Services</a><a href="#tarifs">Tarifs</a><a href="#fonctionnement">Comment ça marche</a><a class="button" href="#contact">Parlons de votre besoin <span aria-hidden="true">↗</span></a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="wrap hero" id="accueil">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Votre appui au quotidien</div>
+        <h1 id="editable-hero-title">Vos études, un pas à la fois.</h1>
+        <p class="lead" id="editable-hero-intro">TypeUP Academia vous accompagne pour préparer, présenter et imprimer vos travaux universitaires, avec un appui clair et adapté à votre besoin.</p>
+        <div class="hero-actions"><a class="button" href="#contact">Présenter mon besoin <span aria-hidden="true">↗</span></a><a class="textlink" href="#services">Découvrir nos services ↓</a></div>
+        <div class="trust"><div class="avatars"><span>ET</span><span>+</span><span>✓</span></div><span>Un service pensé pour les étudiants</span></div>
+      </div>
+      <div class="visual" aria-label="Illustration d'un travail universitaire préparé et mis en page">
+        <div class="floating"><b>Votre travail</b>Prêt à être remis</div>
+        <div class="paper-card"><div class="paper-top"><div class="paper-logo">FQ</div><div class="paper-lines"><i></i><i></i></div></div><div class="paper-title">Travail pratique<br>de fin de module</div><div class="paper-sub">DOCUMENT ÉTUDIANT · VERSION FINALE</div><div class="paper-rule"></div><div class="paper-section">01 &nbsp; Présentation du sujet</div><div class="paper-row"></div><div class="paper-row"></div><div class="paper-row short"></div><div class="paper-section">02 &nbsp; Développement</div><div class="paper-row"></div><div class="paper-row"></div><div class="paper-row short"></div><div class="stamp">✓ &nbsp; Mise en page soignée</div></div>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">Nos services</div><h2>De quoi<br>As-tu besoin?</h2></div><p> </p></div>
+        <div class="cards">
+          <article class="card"><div class="icon">✎</div><h3>Relecture & correction</h3><p>Amélioration de la clarté, de l’orthographe et de la présentation de vos documents.</p></article>
+          <article class="card"><div class="icon">▤</div><h3>Mise en page</h3><p>Organisation et présentation soignée de vos TP, rapports et travaux de fin d’études.</p></article>
+          <article class="card"><div class="icon">▧</div><h3>Impression</h3><p>Préparation de vos exemplaires imprimés selon le format et les consignes demandés.</p></article>
+          <article class="card"><div class="icon">➜</div><h3>Remise & livraison</h3><p>Récupérez votre document électroniquement ou convenez d’une livraison à la faculté.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="services" id="tarifs">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">Nos tarifs </div><h2>Des prix <br>à mieux que la concurrance.</h2></div><p></p></div>
+        <div class="pricing-grid">
+          <article class="card"><h3>Accompagnement du travail</h3><p>Le tarif de base augmente par tranche de cinq pages.</p><ul class="price-list" id="price-tier-list"><li><span>1 à 5 pages</span><strong>1 500 FC</strong></li><li><span>6 à 10 pages</span><strong>3 000 FC</strong></li><li><span>11 à 15 pages</span><strong>4 500 FC</strong></li><li><span>16 à 20 pages</span><strong>6 000 FC</strong></li><li><span>21 à 25 pages</span><strong>7 500 FC</strong></li><li><span>26 à 30 pages</span><strong>9 000 FC</strong></li></ul></article>
+          <article class="card"><h3>Options</h3><div class="price-example"><b>Saisie et mise en forme</b><span><strong id="typing-format-price">+5 000 FC</strong> par document</span></div><div class="price-example"><b>Impression</b><span><strong id="print-price">+500 FC</strong> par page et par exemplaire</span></div><p class="price-note">La saisie, la mise en forme et l’impression sont des options.</p></article>
+          <article class="card"><h3>Exemples avec les options</h3><p>Les exemples incluent la saisie, la mise en forme et l’impression d’un exemplaire.</p><div id="price-examples"><div class="price-example"><b>5 pages : 9 000 FC</b><span>1 500 + 5 000 + 2 500 FC</span></div><div class="price-example"><b>10 pages : 13 000 FC</b><span>3 000 + 5 000 + 5 000 FC</span></div><div class="price-example"><b>20 pages : 21 000 FC</b><span>6 000 + 5 000 + 10 000 FC</span></div></div><p class="price-note">Livraison, copies supplémentaires et demandes urgentes : prix à convenir sur WhatsApp.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="how" id="fonctionnement"><div class="wrap howgrid"><div class="how-copy"><div class="eyebrow">Simple et direct</div><h2>On s’organise<br>ensemble.</h2><p>Pas besoin de rédiger un long message. Le site prépare ta demande et t’accompagne pour joindre le fichier.</p></div><div class="steps"><div class="step"><div class="stepnum">01</div><div><h3>Choisis ton service</h3><p>Indique si ton fichier PDF ou Word est prêt, ou si tu veux de l’aide pour le préparer.</p></div></div><div class="step"><div class="stepnum">02</div><div><h3>Ta demande ouvre WhatsApp</h3><p>Le site choisit automatiquement un numéro et prépare le message.</p></div></div><div class="step"><div class="stepnum">03</div><div><h3>Joins ton document</h3><p>Dans WhatsApp, touche le trombone, puis Document. Pour l’impression, le PDF est recommandé. Si tu ne sais pas quoi envoyer, nous te guiderons.</p></div></div><div class="step"><div class="stepnum">04</div><div><h3>On confirme les détails ensemble</h3><p>Nous convenons du tarif, du délai et de la remise : en version électronique ou à la faculté.</p></div></div></div></div></section>
+    <section class="cta" id="contact"><div class="wrap"><div class="cta-box"><div><h2>Parlons de votre travail.</h2><p>Choisis le service et dis-nous si ton fichier est prêt. Nous convenons du tarif et du délai sur WhatsApp.</p></div><form class="request-form" id="request-form"><label>Votre nom<input name="name" autocomplete="name" required maxlength="120" placeholder="Nom complet"></label><label>Service souhaité<select name="service" required><option value="">Choisir un service</option><option>Accompagnement TP / TFC</option><option>Correction et relecture</option><option>Mise en page</option><option>Impression</option><option>Livraison</option></select></label><label class="wide">Votre fichier<select name="fileStatus" id="file-status" required><option value="">Choisir une option</option><option value="Mon fichier PDF ou Word est prêt">J’ai déjà mon fichier PDF ou Word</option><option value="J’ai besoin d’aide pour préparer mon fichier">Je ne sais pas comment préparer mon fichier</option></select></label><p class="form-help wide" id="file-help">Si ton fichier est prêt, choisis la première option. Sinon, nous te guiderons.</p><button class="button light wide" type="submit">Continuer sur WhatsApp ↗</button><p class="form-status" id="form-status" role="status" aria-live="polite">Dans WhatsApp, tu pourras joindre ton PDF ou ton fichier Word avant d’envoyer.</p></form></div></div></section>
+  </main>
+  <footer><div class="wrap foot"><a class="brand" href="#accueil"><span class="brandmark">TU</span><span data-site-brand>TypeUP Academia</span></a><span>© 2026 TypeUP Academia · Un appui pour avancer.</span></div></footer>
+  <script>
+    const formatFC = (amount) => Number(amount).toLocaleString('fr-FR') + ' FC';
+    let whatsappNumbers = ['243991435930', '243820922944'];
+    async function loadSiteSettings() {
+      try {
+        const response = await fetch('/content/site-settings.json', { cache: 'no-store' });
+        if (!response.ok) return;
+        const settings = await response.json();
+        if (settings.brandName) {
+          document.querySelectorAll('[data-site-brand]').forEach((element) => { element.textContent = settings.brandName; });
+          document.title = settings.brandName + ' — Un appui concret pour vos études';
+        }
+        if (settings.heroTitle) document.querySelector('#editable-hero-title').textContent = settings.heroTitle;
+        if (settings.heroIntro) document.querySelector('#editable-hero-intro').textContent = settings.heroIntro;
+        if (Array.isArray(settings.whatsappNumbers) && settings.whatsappNumbers.length) {
+          const validNumbers = settings.whatsappNumbers.map((number) => String(number).replace(/\D/g, '')).filter((number) => number.length >= 10);
+          if (validNumbers.length) whatsappNumbers = validNumbers;
+        }
+
+        const tierList = document.querySelector('#price-tier-list');
+        if (Array.isArray(settings.priceTiers) && tierList) {
+          tierList.replaceChildren();
+          settings.priceTiers.forEach((tier) => {
+            const row = document.createElement('li');
+            const label = document.createElement('span');
+            const price = document.createElement('strong');
+            label.textContent = tier.label;
+            price.textContent = formatFC(tier.amount);
+            row.append(label, price);
+            tierList.append(row);
+          });
+        }
+        const typingPrice = Number(settings.typingFormattingPrice);
+        const printPrice = Number(settings.printingPerPage);
+        if (Number.isFinite(typingPrice)) document.querySelector('#typing-format-price').textContent = '+' + formatFC(typingPrice);
+        if (Number.isFinite(printPrice)) document.querySelector('#print-price').textContent = '+' + formatFC(printPrice);
+
+        const examples = document.querySelector('#price-examples');
+        if (Array.isArray(settings.examplePageCounts) && Array.isArray(settings.priceTiers) && examples) {
+          examples.replaceChildren();
+          settings.examplePageCounts.forEach((pages) => {
+            const tier = settings.priceTiers.find((entry) => Number(pages) <= Number(entry.maxPages));
+            if (!tier) return;
+            const workPrice = Number(tier.amount);
+            const printTotal = printPrice * Number(pages);
+            const total = workPrice + typingPrice + printTotal;
+            const row = document.createElement('div');
+            const title = document.createElement('b');
+            const breakdown = document.createElement('span');
+            row.className = 'price-example';
+            title.textContent = Number(pages) + ' pages : ' + formatFC(total);
+            breakdown.textContent = formatFC(workPrice) + ' + ' + formatFC(typingPrice) + ' + ' + formatFC(printTotal);
+            row.append(title, breakdown);
+            examples.append(row);
+          });
+        }
+      } catch {
+        // Keep the prices embedded in the page if editable settings are unavailable.
+      }
+    }
+    loadSiteSettings();
+
+    const requestForm = document.querySelector('#request-form');
+    const formStatus = document.querySelector('#form-status');
+    const fileStatus = document.querySelector('#file-status');
+    const fileHelp = document.querySelector('#file-help');
+    fileStatus.addEventListener('change', () => {
+      if (fileStatus.value === 'Mon fichier PDF ou Word est prêt') {
+        fileHelp.textContent = 'Dans WhatsApp, touche le trombone, choisis Document, puis sélectionne ton PDF ou ton fichier Word. Le PDF est recommandé pour l’impression.';
+      } else if (fileStatus.value) {
+        fileHelp.textContent = 'Pas besoin de préparer un long message. Ouvre WhatsApp et nous t’aiderons à préparer le bon fichier.';
+      } else {
+        fileHelp.textContent = 'Si ton fichier est prêt, choisis la première option. Sinon, nous te guiderons.';
+      }
+    });
+    requestForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const data = Object.fromEntries(new FormData(requestForm).entries());
+      const recipient = whatsappNumbers[Math.floor(Math.random() * whatsappNumbers.length)];
+      const message = [
+        'Bonjour TypeUP Academia, je souhaite demander un service.',
+        '',
+        'Nom : ' + data.name,
+        'Service : ' + data.service,
+        'Mon fichier : ' + data.fileStatus,
+        data.fileStatus === 'Mon fichier PDF ou Word est prêt'
+          ? 'Je vais joindre mon document dans cette conversation WhatsApp.'
+          : 'J’ai besoin d’aide pour préparer ou transmettre mon document.'
+      ].join('\n');
+      formStatus.textContent = 'Ouverture de WhatsApp… Vous pourrez vérifier le message avant de l’envoyer.';
+      window.location.href = 'https://wa.me/' + recipient + '?text=' + encodeURIComponent(message);
+    });
+  </script>
+</body>
+</html>
